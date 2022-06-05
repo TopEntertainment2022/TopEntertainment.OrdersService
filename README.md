@@ -1,0 +1,3 @@
+# TopEntertainment.OrdersService
+
+endpoint implementation.
