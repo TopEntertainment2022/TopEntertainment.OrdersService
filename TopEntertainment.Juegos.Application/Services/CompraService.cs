@@ -31,7 +31,7 @@ namespace TopEntertainment.Ordenes.Application.Services
         }
 
         public Compra Add(CompraOnCreateDTO compra)
-        {
+        {/*
             try
             {
                 var CompraDetalle = new CompraDetalle
@@ -56,6 +56,8 @@ namespace TopEntertainment.Ordenes.Application.Services
             {
                 return  null;
             }
+            */
+            return null;
         }
 
         public List<Compra> GetAllCompras()

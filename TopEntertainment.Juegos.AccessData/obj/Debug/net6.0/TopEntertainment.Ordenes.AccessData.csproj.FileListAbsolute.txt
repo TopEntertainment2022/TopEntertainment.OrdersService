@@ -1,0 +1,17 @@
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.AccessData.deps.json
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.AccessData.runtimeconfig.json
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.AccessData.dll
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.AccessData.pdb
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.Domain.dll
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.Domain.pdb
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.csproj.AssemblyReference.cache
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.AssemblyInfoInputs.cache
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.AssemblyInfo.cs
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.csproj.CopyComplete
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.dll
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\refint\TopEntertainment.Ordenes.AccessData.dll
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.pdb
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.genruntimeconfig.cache
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\ref\TopEntertainment.Ordenes.AccessData.dll

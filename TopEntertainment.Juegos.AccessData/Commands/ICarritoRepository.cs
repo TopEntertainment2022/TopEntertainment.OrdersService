@@ -21,5 +21,6 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
         void eliminarJuego(JuegoCarrito juego);
         void Update(Carrito Carrito);
         JuegoCarrito GetJuegoPorProducto(int idProducto, int idCarricto);
+        Carrito estaClienteIn(int IdCliente);
     }
 }
