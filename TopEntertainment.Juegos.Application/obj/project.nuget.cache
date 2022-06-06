@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "POc8fAwHMEig3t8Fk5cIQommdnBoD2Kvo8PbsEOU9HGVGOD5pg3NckCv5bGZRSvrxmXFp0XGKfe4RbZOQZ5MWQ==",
+  "dgSpecHash": "gPQheYQZplP65OjFqbtopac+5aXUferMdfwSOkdtLCTJamfhHu7gsyGBYYCobKN1j6UZ5noIANXtXjgbimuZUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj",
+  "projectFilePath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ignacio\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Ignacio\\.nuget\\packages\\automapper.ef6\\2.1.1\\automapper.ef6.2.1.1.nupkg.sha512",

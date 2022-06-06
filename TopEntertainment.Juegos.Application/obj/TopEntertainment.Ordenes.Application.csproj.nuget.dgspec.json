@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj": {}
+    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {
+    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj",
+        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj",
         "projectName": "TopEntertainment.Ordenes.AccessData",
-        "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj",
+        "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj",
         "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\obj\\",
+        "outputPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
-                "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj"
+              "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
+                "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj": {
+    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj",
         "projectName": "TopEntertainment.Ordenes.Application",
-        "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj",
+        "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj",
         "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\obj\\",
+        "outputPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -122,11 +122,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {
-                "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj"
+              "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {
+                "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj"
               },
-              "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
-                "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj"
+              "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
+                "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj"
               }
             }
           }
@@ -177,14 +177,14 @@
         }
       }
     },
-    "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
+    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
         "projectName": "TopEntertainment.Ordenes.Domain",
-        "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
+        "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
         "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

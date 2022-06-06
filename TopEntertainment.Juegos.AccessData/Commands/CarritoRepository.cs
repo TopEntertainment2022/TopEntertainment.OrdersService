@@ -64,7 +64,7 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
             public JuegoCarrito GetJuegoPorProducto(int idProducto, int idCarricto)
             {
                 var carritoJuego = (from juego in _context.JuegoCarrito
-                                    where juego.ProductoId == idProducto || juego.Id == idCarricto
+                                    where juego.ProductoId == idProducto && juego.Id == idCarricto
                                     select juego).FirstOrDefault();
 
                 return carritoJuego;

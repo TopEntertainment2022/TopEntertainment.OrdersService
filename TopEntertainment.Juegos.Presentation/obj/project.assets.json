@@ -2736,11 +2736,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Presentation\\TopEntertainment.Ordenes.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Presentation\\TopEntertainment.Ordenes.Presentation.csproj",
       "projectName": "TopEntertainment.Ordenes.Presentation",
-      "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Presentation\\TopEntertainment.Ordenes.Presentation.csproj",
+      "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Presentation\\TopEntertainment.Ordenes.Presentation.csproj",
       "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2760,11 +2760,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {
-              "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj"
+            "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {
+              "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj"
             },
-            "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj": {
-              "projectPath": "C:\\Users\\Ignacio\\Desktop\\github prueba\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj"
+            "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj": {
+              "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Application\\TopEntertainment.Ordenes.Application.csproj"
             }
           }
         }
