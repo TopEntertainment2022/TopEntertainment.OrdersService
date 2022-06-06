@@ -28,16 +28,11 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
             try
             {
                 
-                List<Compra> CompraEntity = _service.GetAllCompras();
-                List<CompraOnView2DTO> compraMapeada = new List<CompraOnView2DTO>();
-                foreach (var compra in CompraEntity)
+                List<CompraOnView2DTO> CompraEntity = _service.GetAllCompras();
+               
+                if (CompraEntity != null)
                 {
-                    var clienteMappeado = _mapper.Map<CompraOnView2DTO>(compra);
-                    compraMapeada.Add(clienteMappeado);
-                }
-                if (compraMapeada != null)
-                {
-                    return new JsonResult(compraMapeada) { StatusCode = 200 };
+                    return new JsonResult(CompraEntity) { StatusCode = 200 };
                 }
 
                 return NotFound();
@@ -56,12 +51,12 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
         {
             try
             {
-                var CompraEntity = _service.GetCompraById(id);
+              var CompraEntity = _service.GetCompraById(id);
 
-                if(CompraEntity != null)
+                if (CompraEntity != null)
                 {
-                    var clienteMappeado = _mapper.Map<CompraOnView2DTO>(CompraEntity);
-                    return new JsonResult(clienteMappeado) { StatusCode = 200};
+                   
+                    return new JsonResult(CompraEntity) { StatusCode = 200};
                 }
 
                 return NotFound();
@@ -72,28 +67,7 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
             }
         }
 
-        [HttpPut("Update")]
-        [ProducesResponseType(typeof(CompraOnView2DTO), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> UpdateCompra([FromBody] CompraOnView2DTO compra)
-        {
-            try
-            {
-                _service.Update(compra);
-
-
-                return StatusCode(200," compra actualizada ");
-                
-
-                return NotFound();
-            }
-            catch (Exception)
-            {
-                return StatusCode(500, "Internal server error");
-
-            }
-        }
+        
         
         [HttpPost]
         [ProducesResponseType(typeof(CompraOnViewDTO), StatusCodes.Status201Created)]

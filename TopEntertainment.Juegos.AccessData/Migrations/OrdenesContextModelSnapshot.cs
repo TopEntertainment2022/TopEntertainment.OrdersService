@@ -47,17 +47,19 @@ namespace TopEntertainment.Ordenes.AccessData.Migrations
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.Compra", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Comprobante")
-                        .IsRequired()
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CarritoId")
+                        .HasMaxLength(45)
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("FechaHora")
                         .HasColumnType("date");
 
-                    b.Property<float>("Importe")
+                    b.Property<float>("ImporteFinal")
                         .HasMaxLength(50)
                         .HasColumnType("real");
 
@@ -68,27 +70,6 @@ namespace TopEntertainment.Ordenes.AccessData.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Compras");
-                });
-
-            modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.CompraDetalle", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<float>("Importe")
-                        .HasMaxLength(45)
-                        .HasColumnType("real");
-
-                    b.Property<float>("Precio")
-                        .HasMaxLength(20)
-                        .HasColumnType("real");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("CompraDetalles");
                 });
 
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.EstadoDetalle", b =>
@@ -122,7 +103,10 @@ namespace TopEntertainment.Ordenes.AccessData.Migrations
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.JuegoCarrito", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
@@ -151,17 +135,6 @@ namespace TopEntertainment.Ordenes.AccessData.Migrations
                     b.Navigation("estado");
                 });
 
-            modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.Compra", b =>
-                {
-                    b.HasOne("TopEntertainment.Ordenes.Domain.Entities.CompraDetalle", "compradetalle")
-                        .WithOne("Compra")
-                        .HasForeignKey("TopEntertainment.Ordenes.Domain.Entities.Compra", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("compradetalle");
-                });
-
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.JuegoCarrito", b =>
                 {
                     b.HasOne("TopEntertainment.Ordenes.Domain.Entities.Carrito", "Carrito")
@@ -170,29 +143,12 @@ namespace TopEntertainment.Ordenes.AccessData.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TopEntertainment.Ordenes.Domain.Entities.CompraDetalle", "Compradetalle")
-                        .WithOne("JuegoCarrito")
-                        .HasForeignKey("TopEntertainment.Ordenes.Domain.Entities.JuegoCarrito", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Carrito");
-
-                    b.Navigation("Compradetalle");
                 });
 
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.Carrito", b =>
                 {
                     b.Navigation("Carritos");
-                });
-
-            modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.CompraDetalle", b =>
-                {
-                    b.Navigation("Compra")
-                        .IsRequired();
-
-                    b.Navigation("JuegoCarrito")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.EstadoDetalle", b =>

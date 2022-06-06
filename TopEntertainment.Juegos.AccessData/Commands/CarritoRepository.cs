@@ -35,18 +35,22 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
 
                 return carritoDev;
             }
-            /*
-            public List<JuegoCarrito> getCarritoDetalleById(int id)
+
+
+       
+        /*
+        public List<JuegoCarrito> getCarritoDetalleById(int id)
+        {
+            var carritoDev = (from carrito in _context.JuegoCarrito
+                              where carrito.Id == id
+                              select carrito).ToList();
+        }
+        */
+        public void Update(Carrito Carrito)
             {
-                var carritoDev = (from carrito in _context.JuegoCarrito
-                                  where carrito.Id == id
-                                  select carrito).ToList();
-            }
-            */
-            public void Update(Carrito Carrito)
-            {
-                throw new NotImplementedException();
-            }
+            _context.Update(Carrito);
+            _context.SaveChanges();
+        }
 
             public void AddCarrito(int cliente)
             {
@@ -57,7 +61,7 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
 
             public void addJuego(int id, CarritoJuegoDTO CarritoJuegoDTO)
             {
-                JuegoCarrito juego = new JuegoCarrito() { CarritoID = id, ProductoId = CarritoJuegoDTO.ProductoId, Cantidad = CarritoJuegoDTO.Cantidad , Compradetalle = new CompraDetalle()};
+                JuegoCarrito juego = new JuegoCarrito() { CarritoID = id, ProductoId = CarritoJuegoDTO.ProductoId, Cantidad = CarritoJuegoDTO.Cantidad , };
                 _context.Add(juego);
                 _context.SaveChanges();
             }

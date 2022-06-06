@@ -17,8 +17,6 @@ namespace TopEntertainment.Ordenes.Domain.Entities
 
         public int Cantidad { get; set; }
 
-        public CompraDetalle Compradetalle { get; set; }
-
         public virtual Carrito Carrito { get; set; }
     }
 }

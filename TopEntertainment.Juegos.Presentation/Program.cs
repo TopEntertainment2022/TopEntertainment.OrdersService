@@ -20,9 +20,9 @@ builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddTransient<ICompraService, CompraService>();
 builder.Services.AddTransient<ICompraRepository, CompraRepository>();
-builder.Services.AddTransient<ICompraDetalleService, CompraDetalleService>();
+
 builder.Services.AddTransient<ICarritoService, CarritoService>();
-builder.Services.AddTransient<ICompraDetalleRepository, CompraDetalleRepository>();
+
 builder.Services.AddTransient<ICarritoRepository, CarritoRepository>();
 builder.Services.AddDbContext<OrdenesContext>(x => x.UseSqlServer(connectionString));
 var app = builder.Build();

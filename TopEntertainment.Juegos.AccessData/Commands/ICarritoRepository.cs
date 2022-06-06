@@ -13,6 +13,8 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
         Carrito GetCarritoById(int id);
 
         public JuegoCarrito GetCarritoPorID(int id);
+
+  
         void AddCarrito(int cliente);
         List<Carrito> tenerTodosLosCarritos();
         List<JuegoCarrito> tenerJuegoCarrito(int id);

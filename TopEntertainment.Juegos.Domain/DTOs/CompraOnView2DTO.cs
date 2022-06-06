@@ -7,9 +7,8 @@
 
         public int usuarioId { get; set; }
 
-        public string Comprobante { get; set; }
+        public List<string> Comprobante { get; set; } = new List<string>();
 
-        public CompraDetalleOnCreateDTO CompraDetalle { get; set; }
        
         
 

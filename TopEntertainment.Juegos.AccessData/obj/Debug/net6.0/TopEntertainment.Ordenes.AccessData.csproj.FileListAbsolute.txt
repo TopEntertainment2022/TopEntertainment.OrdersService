@@ -1,0 +1,17 @@
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.AccessData.deps.json
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.AccessData.runtimeconfig.json
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.AccessData.dll
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.AccessData.pdb
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.Domain.dll
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\bin\Debug\net6.0\TopEntertainment.Ordenes.Domain.pdb
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.csproj.AssemblyReference.cache
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.AssemblyInfoInputs.cache
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.AssemblyInfo.cs
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.csproj.CopyComplete
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.dll
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\refint\TopEntertainment.Ordenes.AccessData.dll
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.pdb
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\TopEntertainment.Ordenes.AccessData.genruntimeconfig.cache
+C:\Users\SunTzu\Desktop\Nueva carpeta (2)\TopEntertainment.OrdersService\TopEntertainment.Juegos.AccessData\obj\Debug\net6.0\ref\TopEntertainment.Ordenes.AccessData.dll
