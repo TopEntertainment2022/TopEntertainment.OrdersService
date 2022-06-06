@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {}
+    "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {
+    "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj",
+        "projectUniqueName": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj",
         "projectName": "TopEntertainment.Ordenes.AccessData",
-        "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj",
-        "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.AccessData\\obj\\",
+        "projectPath": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.AccessData\\TopEntertainment.Ordenes.AccessData.csproj",
+        "packagesPath": "C:\\Users\\SunTzu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.AccessData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SunTzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
-                "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj"
+              "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
+                "projectPath": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj"
               }
             }
           }
@@ -95,20 +96,21 @@
         }
       }
     },
-    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
+    "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
         "projectName": "TopEntertainment.Ordenes.Domain",
-        "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
-        "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\obj\\",
+        "projectPath": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
+        "packagesPath": "C:\\Users\\SunTzu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SunTzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

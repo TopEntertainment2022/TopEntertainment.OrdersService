@@ -12,8 +12,6 @@ namespace TopEntertainment.Ordenes.Presentation.Utilities
             CreateMap<Compra, CompraOnViewDTO>().ReverseMap();
             CreateMap<Compra, CompraOnView2DTO>().ReverseMap();
             CreateMap<Compra, CompraOnUpdateDTO>().ReverseMap();
-            CreateMap<CompraDetalle,CompraDetalleOnViewDTO>().ReverseMap();
-            CreateMap<CompraDetalle, CompraDetalleOnCreateDTO>().ReverseMap();
 
         }
     }
