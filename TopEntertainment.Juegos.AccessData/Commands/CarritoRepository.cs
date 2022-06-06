@@ -43,6 +43,24 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
                                   select carrito).ToList();
             }
             */
+
+        public Carrito getCarritoIndividual(int id)
+        {
+            var carritoDev = (from carrito in _context.Carritos
+                              where carrito.Id == id
+                              select carrito).FirstOrDefault();
+
+            return carritoDev;
+        }
+
+        public Carrito getCarritoPendienteById(int id)
+        {
+            var carritoDev = (from carrito in _context.Carritos
+                              where carrito.UsuarioId == id && carrito.EstadoID==1
+                              select carrito).FirstOrDefault();
+
+            return carritoDev;
+        }
             public void Update(Carrito Carrito)
             {
             _context.Update(Carrito);
@@ -65,7 +83,7 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
             public JuegoCarrito GetJuegoPorProducto(int idProducto, int idCarricto)
             {
                 var carritoJuego = (from juego in _context.JuegoCarrito
-                                    where juego.ProductoId == idProducto && juego.Id == idCarricto
+                                    where juego.ProductoId == idProducto && juego.CarritoID == idCarricto 
                                     select juego).FirstOrDefault();
 
                 return carritoJuego;
@@ -94,7 +112,7 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
         public List<JuegoCarrito> tenerJuegoCarrito(int id)
         {
                 var carritoJuego = (from JuegoCarrito in _context.JuegoCarrito
-                                    where JuegoCarrito.CarritoID == id
+                                    where JuegoCarrito.CarritoID == id 
                                     select JuegoCarrito).ToList();
                 return carritoJuego;
         }
