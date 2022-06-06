@@ -5,7 +5,7 @@ namespace TopEntertainment.Ordenes.Domain.Entities
     {
       
         public int Id { get; set; } 
-        public virtual JuegoCarrito JuegoCarrito { get; set; }
+       // public virtual JuegoCarrito JuegoCarrito { get; set; }
 
         public Compra Compra { get; set; }
         public float Precio { get; set; }

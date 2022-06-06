@@ -1,0 +1,14 @@
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\bin\Debug\net6.0\TopEntertainment.Ordenes.Domain.deps.json
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\bin\Debug\net6.0\TopEntertainment.Ordenes.Domain.runtimeconfig.json
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\bin\Debug\net6.0\TopEntertainment.Ordenes.Domain.dll
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\bin\Debug\net6.0\TopEntertainment.Ordenes.Domain.pdb
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\TopEntertainment.Ordenes.Domain.csproj.AssemblyReference.cache
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\TopEntertainment.Ordenes.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\TopEntertainment.Ordenes.Domain.AssemblyInfoInputs.cache
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\TopEntertainment.Ordenes.Domain.AssemblyInfo.cs
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\TopEntertainment.Ordenes.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\TopEntertainment.Ordenes.Domain.dll
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\refint\TopEntertainment.Ordenes.Domain.dll
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\TopEntertainment.Ordenes.Domain.pdb
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\TopEntertainment.Ordenes.Domain.genruntimeconfig.cache
+C:\Users\Ignacio\Desktop\github prueba\TopEntertainment.OrdersService-Main\TopEntertainment.Juegos.Domain\obj\Debug\net6.0\ref\TopEntertainment.Ordenes.Domain.dll

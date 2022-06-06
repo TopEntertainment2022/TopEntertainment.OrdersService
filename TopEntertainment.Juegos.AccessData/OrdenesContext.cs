@@ -55,10 +55,11 @@ namespace TopEntertainment.Ordenes.AccessData
             entity.HasOne(e => e.Compra)
                   .WithOne(d => d.compradetalle)
                   .HasForeignKey<Compra>(a => a.Id);
-                
+            /*    
             entity.HasOne(e => e.JuegoCarrito)
                   .WithOne(d => d.Compradetalle)
                   .HasForeignKey<JuegoCarrito>(c => c.Id);
+            */
                 
                 modelBuilder.Entity<Carrito>(entity =>
                 {

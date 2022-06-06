@@ -34,7 +34,16 @@ namespace TopEntertainment.Ordenes.Application.Services
         }
         public void AddCarrito(int cliente)
         {
-            _repository.AddCarrito(cliente);
+            var confirmacion = _repository.estaClienteIn(cliente);
+            if (confirmacion != null)
+            {
+                throw new FormatException();
+            }
+            else
+            {
+                _repository.AddCarrito(cliente);
+            }
+            
         }
 
         public void addJuegoCarrito(CarritoJuegoDTO carritoDetalle)

@@ -57,7 +57,7 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
 
             public void addJuego(int id, CarritoJuegoDTO CarritoJuegoDTO)
             {
-                JuegoCarrito juego = new JuegoCarrito() { CarritoID = id, ProductoId = CarritoJuegoDTO.ProductoId, Cantidad = CarritoJuegoDTO.Cantidad , Compradetalle = new CompraDetalle()};
+            JuegoCarrito juego = new JuegoCarrito() { CarritoID = id, ProductoId = CarritoJuegoDTO.ProductoId, Cantidad = CarritoJuegoDTO.Cantidad };//, Compradetalle = new CompraDetalle()};
                 _context.Add(juego);
                 _context.SaveChanges();
             }
@@ -77,26 +77,36 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
             return _context.JuegoCarrito.FirstOrDefault(c => c.Carrito.Id == id);
         }
         public void modificarCantidad(JuegoCarrito juego, int cantidad)
-            {
+        {
                 var juegoVar = juego;
                 juegoVar.Cantidad = cantidad;
                 _context.Update(juegoVar);
                 _context.SaveChanges();
-            }
+        }
 
-            public void eliminarJuego(JuegoCarrito juego)
-            {
+        public void eliminarJuego(JuegoCarrito juego)
+        {
                 _context.Remove(juego);
                 _context.SaveChanges();
-            }
+        }
 
-            public List<JuegoCarrito> tenerJuegoCarrito(int id)
-            {
+        public List<JuegoCarrito> tenerJuegoCarrito(int id)
+        {
                 var carritoJuego = (from JuegoCarrito in _context.JuegoCarrito
                                     where JuegoCarrito.CarritoID == id
                                     select JuegoCarrito).ToList();
                 return carritoJuego;
-            }
+        }
+
+        public Carrito estaClienteIn(int IdCliente)
+        {
+            var carritoIn =  (from carrito in _context.Carritos
+                            where carrito.UsuarioId==IdCliente && carrito.EstadoID ==1
+                            select carrito).FirstOrDefault();
+            return carritoIn;
+        }
+
+
         
     }
 }

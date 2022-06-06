@@ -122,7 +122,10 @@ namespace TopEntertainment.Ordenes.AccessData.Migrations
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.JuegoCarrito", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
@@ -170,15 +173,7 @@ namespace TopEntertainment.Ordenes.AccessData.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TopEntertainment.Ordenes.Domain.Entities.CompraDetalle", "Compradetalle")
-                        .WithOne("JuegoCarrito")
-                        .HasForeignKey("TopEntertainment.Ordenes.Domain.Entities.JuegoCarrito", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Carrito");
-
-                    b.Navigation("Compradetalle");
                 });
 
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.Carrito", b =>
@@ -189,9 +184,6 @@ namespace TopEntertainment.Ordenes.AccessData.Migrations
             modelBuilder.Entity("TopEntertainment.Ordenes.Domain.Entities.CompraDetalle", b =>
                 {
                     b.Navigation("Compra")
-                        .IsRequired();
-
-                    b.Navigation("JuegoCarrito")
                         .IsRequired();
                 });
 

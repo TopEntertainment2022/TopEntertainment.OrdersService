@@ -6,7 +6,7 @@ using TopEntertainment.Ordenes.Domain.DTOs;
 
 namespace TopEntertainment.Ordenes.Presentation.Controllers
 {
-    [Route("Carrito")]
+    [Route("Api/Carrito")]
     [ApiController]
     public class CarritoController : ControllerBase
     {
@@ -40,7 +40,7 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
         }
 
         */
-        [HttpPost]
+        [HttpPost("AñadirJuego")]
         [ProducesResponseType(typeof(CarritoJuegoDTO), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult PostJuegoCarrito([FromBody] CarritoJuegoDTO Carrito)
@@ -48,7 +48,7 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
             try
             {
                 _service.addJuegoCarrito(Carrito);
-                return StatusCode(200, "Carrito creado correctamente");
+                return StatusCode(200, "Juego añadido correctamente");
 
             }
             catch (Exception e)
@@ -57,7 +57,7 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
             }
         }
 
-        [HttpPost("/CrearCarritoCliente/{idCliente}")]
+        [HttpPost("CrearCarritoCliente/{idCliente}")]
         public IActionResult PostCarrito(int idCliente)
         {
             try
@@ -72,20 +72,20 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
             }
         }
 
-        [HttpDelete("/EliminarJuego/")]
+        [HttpDelete("EliminarJuego")]
         public IActionResult EliminarProductos(int idCliente, int idProducto)
         {
             _service.eliminarJuegoCarrito(idCliente, idProducto);
-            return StatusCode(200, "Producto eliminado correctamente");
+            return StatusCode(200, "Juego eliminado correctamente");
         }
-        [HttpPost("/idJuegoAct/")]
+        [HttpPut("ActualizarCantidadJuego")]
         public IActionResult actualizarCantidad(int cantidad, int idProducto, int idCliente)
         {
 
             try
             {
                 _service.modificarCantidad(cantidad, idProducto, idCliente);
-                return StatusCode(200, "Carrito creado correctamente");
+                return StatusCode(200, "Cantidad actualizada correctamente");
 
             }
             catch (Exception e)
@@ -96,7 +96,7 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
             //return StatusCode(200, "Cantidad actualizada correctamente");
         }
 
-        [HttpGet("/obtenerCarrito/")]
+        [HttpGet("ObtenerCarrito")]
 
         public IActionResult obtenerCarritoCompleto(int id)
         {

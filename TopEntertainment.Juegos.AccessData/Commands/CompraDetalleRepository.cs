@@ -26,9 +26,15 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
 
         public CompraDetalle GetCompraDetalleByCarrito(int id)
         {
-            return _context.CompraDetalles.FirstOrDefault(c => c.JuegoCarrito.Id == id);
+            throw new NotImplementedException();
         }
 
+        /*
+public CompraDetalle GetCompraDetalleByCarrito(int id)
+{
+   return _context.CompraDetalles.FirstOrDefault(c => c.JuegoCarrito.Id == id);
+}
+*/
         public CompraDetalle GetCompraDetalleByCompra(int id)
         {
             return _context.CompraDetalles.FirstOrDefault(c => c.Compra.Id == id);
