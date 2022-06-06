@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {}
+    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
+    "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
         "projectName": "TopEntertainment.Ordenes.Domain",
-        "projectPath": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
-        "packagesPath": "C:\\Users\\SunTzu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SunTzu\\Desktop\\Nueva carpeta (3)\\TopEntertainment.OrdersService\\TopEntertainment.Juegos.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\TopEntertainment.Ordenes.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ignacio\\Desktop\\Nueva carpeta (4)\\TopEntertainment.OrdersService-Main\\TopEntertainment.Juegos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SunTzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

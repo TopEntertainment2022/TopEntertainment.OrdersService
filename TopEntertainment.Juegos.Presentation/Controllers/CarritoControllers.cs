@@ -75,8 +75,14 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
         [HttpDelete("EliminarJuego")]
         public IActionResult EliminarProductos(int idCliente, int idProducto)
         {
-            _service.eliminarJuegoCarrito(idCliente, idProducto);
-            return StatusCode(200, "Juego eliminado correctamente");
+            try
+            {
+                _service.eliminarJuegoCarrito(idCliente, idProducto);
+                return StatusCode(200, "Juego eliminado correctamente");
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
         [HttpPut("ActualizarCantidadJuego")]
         public IActionResult actualizarCantidad(int cantidad, int idProducto, int idCliente)
@@ -100,13 +106,19 @@ namespace TopEntertainment.Ordenes.Presentation.Controllers
 
         public IActionResult obtenerCarritoCompleto(int id)
         {
-            var carrito = _service.carritoCompleto(id);
-            if (carrito != null)
+            try
             {
-                return new JsonResult(carrito) { StatusCode = 200 };
+                var carrito = _service.carritoCompleto(id);
+                if (carrito != null)
+                {
+                    return new JsonResult(carrito) { StatusCode = 200 };
 
+                }
+                return NotFound();
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
             }
-            return NotFound();
         }
 
     }

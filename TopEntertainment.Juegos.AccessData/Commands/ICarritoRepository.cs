@@ -22,5 +22,9 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
         void Update(Carrito Carrito);
         JuegoCarrito GetJuegoPorProducto(int idProducto, int idCarricto);
         Carrito estaClienteIn(int IdCliente);
+
+        Carrito getCarritoPendienteById(int id);
+
+        Carrito getCarritoIndividual(int id);
     }
 }

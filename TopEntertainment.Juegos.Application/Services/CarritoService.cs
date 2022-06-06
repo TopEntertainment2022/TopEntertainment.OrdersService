@@ -48,14 +48,25 @@ namespace TopEntertainment.Ordenes.Application.Services
 
         public void addJuegoCarrito(CarritoJuegoDTO carritoDetalle)
         {
-            var juego = _repository.GetCarritoById(carritoDetalle.UsuarioId);
-           
-            _repository.addJuego(juego.Id, carritoDetalle);
+            //var juego = _repository.GetCarritoById(carritoDetalle.UsuarioId);
+            var juego = _repository.getCarritoPendienteById(carritoDetalle.UsuarioId);
+            var comprobar = _repository.GetJuegoPorProducto(carritoDetalle.ProductoId, juego.Id);
+            if(comprobar != null )
+            {
+                throw new FormatException();
+            }
+            else
+            {
+                _repository.addJuego(juego.Id, carritoDetalle);
+            }
+
+           // _repository.addJuego(juego.Id, carritoDetalle);
         }
 
         public void eliminarJuegoCarrito(int idCliente, int idProducto)
         {
-            var carrito = _repository.GetCarritoById(idCliente);
+            //var carrito = _repository.GetCarritoById(idCliente);
+            var carrito = _repository.getCarritoPendienteById(idCliente);
             var juego = _repository.GetJuegoPorProducto(idProducto, carrito.Id);
 
             _repository.eliminarJuego(juego);
@@ -68,14 +79,16 @@ namespace TopEntertainment.Ordenes.Application.Services
 
         public void modificarCantidad(int cantidad, int idProducto, int idCliente)
         {
-            var carrito = _repository.GetCarritoById(idCliente);
+            //var carrito = _repository.GetCarritoById(idCliente);
+            var carrito = _repository.getCarritoPendienteById(idCliente);
             var juego = _repository.GetJuegoPorProducto(idProducto, carrito.Id);
             _repository.modificarCantidad(juego, cantidad);
         }
 
         public CarritoCompletoDTO carritoCompleto(int idCliente)
         {
-            var carrito = _repository.GetCarritoById(idCliente);
+            //var carrito = _repository.GetCarritoById(idCliente);
+            var carrito = _repository.getCarritoPendienteById(idCliente);
             var juego = _repository.tenerJuegoCarrito(carrito.Id);
             List<JuegoCompletoDTO> juegoTotal = new List<JuegoCompletoDTO>();
             foreach (JuegoCarrito iterador in juego)

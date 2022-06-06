@@ -32,13 +32,14 @@ namespace TopEntertainment.Ordenes.Application.Services
         {
             try
             {
-                var carrito = _carritoRepository.GetCarritoById(compra.UsuarioId);
+                //var carrito = _carritoRepository.GetCarritoById(compra.UsuarioId);
+                var carrito = _carritoRepository.getCarritoPendienteById(compra.UsuarioId);
                 var game = _carritoRepository.GetCarritoPorID(compra.UsuarioId);
-                carrito.EstadoID = 1;
+                carrito.EstadoID = 2;
                 _carritoRepository.Update(carrito);
-
-                var compraMap = _mapper.Map<Compra>(compra);
-
+                Compra compraPrueba = new Compra() { CarritoId = carrito.Id, UsuarioId = compra.UsuarioId, FechaHora = compra.FechaHora, ImporteFinal = compra.Importe };
+                //var compraMap = _mapper.Map<Compra>(compra);
+                var compraMap = _mapper.Map<Compra>(compraPrueba);
 
 
                 _repository.Add(compraMap);
@@ -60,12 +61,15 @@ namespace TopEntertainment.Ordenes.Application.Services
 
             List<CompraOnView2DTO> compraMapeada = new List<CompraOnView2DTO>();
 
-
+            
             foreach (var compra in test)
             {
-                var carrito = _carritoRepository.GetCarritoById(compra.UsuarioId);
+                //var carrito = _carritoRepository.GetCarritoById(compra.UsuarioId);
+                var carrito = _carritoRepository.getCarritoIndividual(compra.CarritoId);
+                //var juego = _carritoRepository.tenerJuegoCarrito(carrito.Id);
                 var juego = _carritoRepository.tenerJuegoCarrito(carrito.Id);
                 var clienteMappeado = _mapper.Map<CompraOnView2DTO>(compra);
+
 
                 foreach (JuegoCarrito iterador in juego)
                 {
@@ -76,6 +80,12 @@ namespace TopEntertainment.Ordenes.Application.Services
 
                 compraMapeada.Add(clienteMappeado);
             }
+            
+
+
+
+
+
 
 
             return compraMapeada;
@@ -84,7 +94,8 @@ namespace TopEntertainment.Ordenes.Application.Services
         public CompraOnView2DTO GetCompraById(int id)
         {
             Compra prueba = _repository.GetCompraById(id);
-            var carrito = _carritoRepository.GetCarritoById(prueba.UsuarioId);
+            //var carrito = _carritoRepository.GetCarritoById(prueba.UsuarioId);
+            var carrito = _carritoRepository.getCarritoIndividual(prueba.Id);
             var juego = _carritoRepository.tenerJuegoCarrito(carrito.Id);
             var clienteMappeado = _mapper.Map<CompraOnView2DTO>(prueba);
 
