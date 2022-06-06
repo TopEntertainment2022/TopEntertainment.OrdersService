@@ -31,7 +31,7 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
 
         public Compra GetCompraByImport(int import)
         {
-            return _context.Compras.SingleOrDefault(p => p.Importe == import);
+            return _context.Compras.SingleOrDefault(p => p.ImporteFinal == import);
         }
 
         public void Update(Compra compra)

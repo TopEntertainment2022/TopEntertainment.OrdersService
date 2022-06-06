@@ -45,8 +45,9 @@ namespace TopEntertainment.Ordenes.AccessData.Commands
             */
             public void Update(Carrito Carrito)
             {
-                throw new NotImplementedException();
-            }
+            _context.Update(Carrito);
+            _context.SaveChanges();
+        }
 
             public void AddCarrito(int cliente)
             {

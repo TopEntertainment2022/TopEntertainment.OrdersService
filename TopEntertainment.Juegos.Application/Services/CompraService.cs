@@ -7,10 +7,10 @@ namespace TopEntertainment.Ordenes.Application.Services
 {
     public interface ICompraService
     {
-        Compra GetCompraById(int id);
+        CompraOnView2DTO GetCompraById(int id);
         Compra GetCompraByImport(int import);
 
-        List<Compra> GetAllCompras();
+        List<CompraOnView2DTO> GetAllCompras();
         Compra  Add(CompraOnCreateDTO Compra);
 
         void Update(CompraOnView2DTO Compra);
@@ -18,67 +18,87 @@ namespace TopEntertainment.Ordenes.Application.Services
     public class CompraService : ICompraService
     {
         private readonly ICompraRepository _repository;
-        private readonly ICompraDetalleRepository _compraDetalleRepository;
         private readonly ICarritoRepository _carritoRepository;
         private readonly IMapper _mapper;
-        public CompraService(ICompraRepository repository, IMapper mapper, ICompraDetalleRepository repo, ICarritoRepository carrito
+        public CompraService(ICompraRepository repository, IMapper mapper, ICarritoRepository carrito
             )
         {
             _repository = repository;
             _mapper = mapper;
-            _compraDetalleRepository = repo;
             _carritoRepository = carrito;
         }
 
         public Compra Add(CompraOnCreateDTO compra)
-        {/*
+        {
             try
             {
-                var CompraDetalle = new CompraDetalle
-                {
-                    Importe = compra.Importe,
-                    //  aca deberia pedir el precio del carrito,buscando algun carrito por algún valor.
-                };
+                var carrito = _carritoRepository.GetCarritoById(compra.UsuarioId);
+                var game = _carritoRepository.GetCarritoPorID(compra.UsuarioId);
+                carrito.EstadoID = 1;
+                _carritoRepository.Update(carrito);
 
-               
-                
                 var compraMap = _mapper.Map<Compra>(compra);
-                CompraDetalle.Compra = compraMap;
-                compraMap.compradetalle = CompraDetalle;
+
+
 
                 _repository.Add(compraMap);
-                var test = _repository.GetCompraById(compraMap.Id);
-                compraMap.compradetalle.JuegoCarrito = _carritoRepository.GetCarritoPorID(test.Id);
-                _repository.Update(compraMap);
-                return _repository.GetCompraById(compraMap.Id);
+
+
+
+
+                return compraMap;
             }
-            catch (Exception )
+            catch (Exception)
             {
-                return  null;
+                return null;
             }
-            */
-            return null;
         }
 
-        public List<Compra> GetAllCompras()
+        public List<CompraOnView2DTO> GetAllCompras()
         {
             List<Compra> test = _repository.GetAllCompras();
-            foreach(var c in test)
+
+            List<CompraOnView2DTO> compraMapeada = new List<CompraOnView2DTO>();
+
+
+            foreach (var compra in test)
             {
-                c.compradetalle = _compraDetalleRepository.GetCompraDetalleById(c.Id);
+                var carrito = _carritoRepository.GetCarritoById(compra.UsuarioId);
+                var juego = _carritoRepository.tenerJuegoCarrito(carrito.Id);
+                var clienteMappeado = _mapper.Map<CompraOnView2DTO>(compra);
+
+                foreach (JuegoCarrito iterador in juego)
+                {
+                    string juegoAgregar = ("ProductoId :" + iterador.ProductoId + "  Cantidad : " + +iterador.Cantidad);
+                    clienteMappeado.Comprobante.Add(juegoAgregar);
+                }
+
+
+                compraMapeada.Add(clienteMappeado);
             }
-            return test;
+
+
+            return compraMapeada;
         }
 
-        public Compra GetCompraById(int id)
+        public CompraOnView2DTO GetCompraById(int id)
         {
             Compra prueba = _repository.GetCompraById(id);
+            var carrito = _carritoRepository.GetCarritoById(prueba.UsuarioId);
+            var juego = _carritoRepository.tenerJuegoCarrito(carrito.Id);
+            var clienteMappeado = _mapper.Map<CompraOnView2DTO>(prueba);
+
+            foreach (JuegoCarrito iterador in juego)
+            {
+                string juegoAgregar = ("ProductoId :" + iterador.ProductoId + "  Cantidad : " + +iterador.Cantidad);
+                clienteMappeado.Comprobante.Add(juegoAgregar);
+            }
             if (prueba == null)
             {
                 return null;
             }
-            prueba.compradetalle = _compraDetalleRepository.GetCompraDetalleById(id);
-            return _repository.GetCompraById(id);
+
+            return clienteMappeado;
         }
 
         public Compra GetCompraByImport(int import)
@@ -88,9 +108,8 @@ namespace TopEntertainment.Ordenes.Application.Services
         public void Update(CompraOnView2DTO compra)
         {
             var compraMap = _mapper.Map<Compra>(compra);
-            compraMap.compradetalle = _compraDetalleRepository.GetCompraDetalleById(compraMap.Id);
 
-             _repository.Update(compraMap);
+            _repository.Update(compraMap);
         }
     }
 }
