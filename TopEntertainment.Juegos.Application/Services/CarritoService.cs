@@ -84,8 +84,8 @@ namespace TopEntertainment.Ordenes.Application.Services
             }
             */
             _repository.addJuego(juego.Id, carritoDetalle);
-            hayStock(carritoDetalle.ProductoId);
-            stockMenos(juego.Id);
+            //hayStock(carritoDetalle.ProductoId);
+            stockMenos(carritoDetalle.ProductoId);
 
         }
 
@@ -103,7 +103,7 @@ namespace TopEntertainment.Ordenes.Application.Services
             var juego = _repository.GetJuegoPorProducto(idProducto, carrito.Id);
 
             _repository.eliminarJuego(juego);
-            stockMas(juego.ProductoId);
+            stockMas(idProducto);
         }
 
         public Carrito GetCarritoById(int id)
